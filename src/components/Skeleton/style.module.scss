@@ -1,0 +1,36 @@
+.skeletonList {
+	display: flex;
+	flex-wrap: wrap;
+
+	gap: 3.25rem;
+
+	& > .skeletonItem {
+		position: relative;
+		background-color: var(--grey-200);
+		width: 18.75rem;
+		height: 340px;
+		border-radius: 8px;
+		opacity: 0.4;
+		overflow: hidden;
+
+		& > div {
+			width: 50px;
+			height: 100%;
+			background-color: var(--grey-100);
+			position: absolute;
+
+			animation: 2.5s pulse infinite ease;
+		}
+	}
+}
+
+@keyframes pulse {
+	0% {
+		width: 110%;
+		opacity: 0.2;
+	}
+	100% {
+		width: 0px;
+		opacity: 1;
+	}
+}

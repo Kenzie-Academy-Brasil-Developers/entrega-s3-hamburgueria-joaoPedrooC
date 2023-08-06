@@ -1,0 +1,27 @@
+.btn {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+
+	background-color: var(--grey-200);
+	color: var(--color-white);
+	border-radius: 0.5rem;
+
+	cursor: pointer;
+
+	gap: 0.625rem;
+
+	&.big {
+		height: 3.75rem;
+		padding: 0rem 1.25rem;
+	}
+
+	&.small {
+		height: 2.5rem;
+		padding: 0rem 1.25rem;
+	}
+
+	&:hover {
+		background-color: var(--color-primary);
+	}
+}

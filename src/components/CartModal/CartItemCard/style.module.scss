@@ -1,0 +1,48 @@
+.cartItem {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+
+	padding: 1.25rem;
+
+	& > div {
+		display: flex;
+		align-items: flex-start;
+
+		gap: 0.58rem;
+
+		& > figure {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 5.14119rem;
+			height: 5rem;
+			background-color: var(--grey-100);
+			border-radius: 0.3125rem;
+			overflow: hidden;
+			position: relative;
+
+			& > .smallImg {
+				max-width: 3.4375rem;
+				align-self: center;
+			}
+
+			& > .bigImg {
+				position: absolute;
+				top: -15px;
+
+				max-width: 110%;
+			}
+		}
+	}
+	.trashBtn {
+		cursor: pointer;
+		color: var(--grey-200);
+
+		margin-top: 2px;
+
+		&:hover {
+			color: var(--grey-600);
+		}
+	}
+}

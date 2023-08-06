@@ -1,0 +1,105 @@
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	position: fixed;
+
+	inset: 0;
+
+	background-color: rgba(0, 0, 0, 0.4);
+	height: 100%;
+	width: 100%;
+
+	padding: 1rem;
+
+	& > div {
+		width: 100%;
+		max-width: 31.25rem;
+		min-height: 25.6875rem;
+
+		background-color: var(--color-white);
+
+		& > .header {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			background-color: var(--color-primary);
+			color: var(--color-white);
+
+			width: 100%;
+
+			padding: 0.81rem 1.38rem;
+
+			& > button {
+				color: var(--color-white);
+				align-self: flex-end;
+
+				cursor: pointer;
+
+				&:hover {
+					color: var(--grey-200);
+				}
+			}
+		}
+
+		.cartListContainer {
+			display: flex;
+			flex-direction: column;
+
+			list-style: none;
+
+			overflow-y: scroll;
+
+			&::-webkit-scrollbar {
+				border-radius: 20px;
+				width: 5px;
+			}
+
+			&::-webkit-scrollbar-thumb {
+				height: 20%;
+				border: 12px solid var(--color-primary);
+				border-radius: 8px;
+			}
+
+			height: 200px;
+
+			padding: 0 1rem;
+		}
+
+		.noCartItems {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			height: 200px;
+
+			padding: 0 1rem;
+		}
+
+		.priceContainer {
+			display: flex;
+			flex-direction: column;
+
+			padding: 1rem;
+			gap: 0.88rem;
+
+			& > div {
+				display: flex;
+				justify-content: space-between;
+
+				padding: 0.9rem 0;
+
+				border-top: 2px solid var(--grey-200);
+
+				& > .grey600 {
+					color: var(--grey-600);
+				}
+				& > .grey300 {
+					color: var(--grey-300);
+				}
+			}
+		}
+	}
+}

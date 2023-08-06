@@ -1,0 +1,16 @@
+.container {
+	width: 100%;
+	max-width: 1424px;
+
+	padding: 0 1rem;
+	margin: 0 auto;
+}
+
+.skeletonList {
+	display: flex;
+	flex-wrap: wrap;
+
+	& > Skeleton {
+		background-color: var(--grey-200);
+	}
+}

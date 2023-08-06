@@ -1,0 +1,42 @@
+.cardList {
+	display: flex;
+	overflow-x: scroll;
+
+	&::-webkit-scrollbar {
+		border-radius: 20px;
+		height: 5px;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		width: 20%;
+		border: 12px solid var(--color-primary);
+		border-radius: 8px;
+	}
+
+	gap: 1.25rem;
+
+	margin-top: 3.38rem;
+
+	padding: 0 0 1rem;
+	@media (min-width: 650px) {
+		overflow-x: hidden;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+
+		column-gap: 3.5rem;
+		row-gap: 3.25rem;
+
+		margin-top: 1.06rem;
+		&:has(li:hover) > li:not(:hover) {
+			filter: blur(2px);
+		}
+	}
+
+	@media (min-width: 740px) {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	@media (min-width: 1200px) {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
