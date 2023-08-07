@@ -87,13 +87,6 @@ export const HomePage = () => {
 		}
 	};
 
-	// useEffect montagem - carrega os produtos da API e joga em productList -> DONE
-	// useEffect atualização - salva os produtos no localStorage (carregar no estado) -> DONE
-	// adição, exclusão, e exclusão geral do carrinho -> DONE
-	// renderizações condições e o estado para exibir ou não o carrinho -> DONE
-	// filtro de busca -> DONE
-	// estilizar tudo com sass de forma responsiva -> DONE
-
 	return (
 		<>
 			<Header
